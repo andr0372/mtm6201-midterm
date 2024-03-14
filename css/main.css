@@ -1,0 +1,81 @@
+/* Starts CSS stylesheet */
+/* Styling mobile first */
+
+#pop {
+    font-family: 'Poppins', sans-serif;
+}
+
+.body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h1 {
+    font-size: 58px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.nav-list li {
+    list-style: none;
+
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: right;
+    margin-right: 50px;
+    margin-top: 40px;
+    align-self: flex-end;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    padding: 40px;
+    padding-right: 30px;
+    color: #252B42;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.logo {
+    margin-left: 50px;
+}
+
+.banner {
+    margin: 0;
+    padding: 0;
+    background: url(../img/Rectangle\ 48.png);
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+}
+
+.text-banner {
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+}
+
+
