@@ -20,12 +20,12 @@
 
 h4 {
     font-size: 24px;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 h1 {
-    font-size: 58px;
-    font-weight: 700;
+    font-size: 36px;
+    font-weight: 600;
 }
 
 h2 {
@@ -38,7 +38,45 @@ h3 {
     color: #FA4A0C;
 }
 
-.header-container {
+.text-banner {
+    text-align: center;
+    padding-top: 50px;
+    margin: 15px;
+    color: #252B42;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.btn-play, .btn-app {
+    padding: 10px;
+}
+
+.appstore, .playstore {
+    height: 68px;
+    width: 236px;
+    font-size: 24px;
+    border-radius: 30px;
+}
+
+.playstore {
+    background-color: #FA4A0C;
+    border: none;
+    color: white;
+}
+
+.appstore {
+    width: 236px;
+    border: 1px solid #FA4A0C;
+    background-color: transparent;
+    color: #FA4A0C;
+}
+
+/*.header-container {
     display: flex;
     justify-content: space-between;
     padding: 30px;
@@ -124,19 +162,16 @@ h3 {
 
 .btn-app {
     padding: 20px;
-}
+}*/
 
 .mobile {
     display: flex;
     justify-content: center;
 }
 
-#mobile {
+.pop {
     border-bottom: 3px solid #E4E4E4;
-}
-
-.main-content {
-    padding-top: 700px;
+    padding: 50px;
 }
 
 .pop {
@@ -163,13 +198,172 @@ h3 {
 
  .foot-banner {
     background-color: #252B42;
+    height: 565px;
     display: flex;
     flex-direction: column;
     align-items: center;
  }
 
+ #foot-banner {
+    padding-top: 110px;
+    padding: 50px;
+ }
+
+.btn-foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btn-buy, .btn-try {
+    padding: 10px;
+}
+
+.buy, .try {
+    height: 64px;
+    font-size: 16px;
+    color: white;
+    border-radius: 10px;
+}
+
+.buy {
+    width: 137px;
+    background-color: #FA4A0C;
+    border: none;
+}
+
+.try {
+    width: 186px;
+    border: 1px solid white;
+    background-color: transparent;
+}
+
  #white {
     color: white;
+    text-align: center;
+ }
+
+ @media screen and (min-width: 744px ) {
+    h4 {
+        font-size: 24px;
+        font-weight: 100;
+    }
+    
+    h1 {
+        font-size: 58px;
+        font-weight: 700;
+    }
+    
+    h2 {
+        font-size: 40px;
+        color: #252B42;
+    }
+    
+    h3 {
+        font-size: 24px;
+        color: #FA4A0C;
+    }
+    
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    
+    .nav-list li {
+        list-style: none;
+    
+    }
+    
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: right;
+        margin-right: 50px;
+        margin-top: 40px;
+        align-self: flex-end;
+    }
+    
+    .nav-list li a {
+        text-decoration: none;
+        padding: 40px;
+        padding-right: 30px;
+        color: #252B42;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    
+    .logo {
+        margin-left: 50px;
+    }
+    
+    .banner1 {
+        margin: 0;
+        padding: 0;
+        background: url(../img/Rectangle\ 48.png);
+        height: 700px;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .text-banner {
+        text-align: center;
+        padding-top: 50px;
+        color: white;
+    }
+    
+    .btns {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .playstore {
+        width: 236px;
+        height: 68px;
+        border-radius: 30px;
+        border: none;
+        background-color: #FA4A0C;
+        font-size: 24px;
+        font-weight: 600;
+        color: white;
+    }
+    
+    .appstore {
+        width: 236px;
+        height: 68px;
+        border-radius: 30px;
+        border: solid 1px;
+        border-color: white;
+        background-color: transparent;
+        font-size: 24px;
+        font-weight: 600;
+        color: white;
+    }
+    
+    .btn-play {
+        padding: 20px;
+    }
+    
+    .btn-app {
+        padding: 20px;
+    }
+    
+    .mobile {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-content {
+        margin-top: 700px;
+    }
+    
+
+
+
  }
 
 
