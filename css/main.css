@@ -5,6 +5,14 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.pop {
+    color: black;
+}
+
+#txtfood {
+    font-weight: 700;
+}
+
 .body {
     font-family: 'Montserrat', sans-serif;
     margin: 0 auto;
@@ -12,6 +20,7 @@
 
 h4 {
     font-size: 24px;
+    font-weight: 100;
 }
 
 h1 {
@@ -21,10 +30,12 @@ h1 {
 
 h2 {
     font-size: 40px;
+    color: #252B42;
 }
 
 h3 {
     font-size: 24px;
+    color: #FA4A0C;
 }
 
 .header-container {
@@ -63,7 +74,7 @@ h3 {
     margin-left: 50px;
 }
 
-.banner {
+.banner1 {
     margin: 0;
     padding: 0;
     background: url(../img/Rectangle\ 48.png);
@@ -77,5 +88,88 @@ h3 {
     padding-top: 50px;
     color: white;
 }
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.playstore {
+    width: 236px;
+    height: 68px;
+    border-radius: 30px;
+    border: none;
+    background-color: #FA4A0C;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+}
+
+.appstore {
+    width: 236px;
+    height: 68px;
+    border-radius: 30px;
+    border: solid 1px;
+    border-color: white;
+    background-color: transparent;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+}
+
+.btn-play {
+    padding: 20px;
+}
+
+.btn-app {
+    padding: 20px;
+}
+
+.mobile {
+    display: flex;
+    justify-content: center;
+}
+
+#mobile {
+    border-bottom: 3px solid #E4E4E4;
+}
+
+.main-content {
+    padding-top: 700px;
+}
+
+.pop {
+    display: flex;
+    justify-content: center;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ .txt {
+    text-align: center;
+    padding-top: 50px;
+ }
+
+ .cell {
+    display: flex;
+    justify-content: center;
+ }
+
+ .foot-banner {
+    background-color: #252B42;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ #white {
+    color: white;
+ }
 
 
