@@ -245,6 +245,45 @@ li a:hover {
     color: #5C5C5C;
 }
 
+.faq-txt {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.faq {
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color: #FA4A0C;
+    border-radius: 20px;
+    padding: 20px;
+}
+.faq-section {
+    margin: 20px;
+}
+  
+.faq-section details {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+}
+  
+.faq-section summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+  
+.faq-section details[open] {
+    background-color: #eee;
+}
+  
+.faq-section p {
+    margin-top: 5px;
+}
+
 @media screen and (min-width: 744px ) {
     h4 {
         font-size: 24px;
@@ -479,7 +518,7 @@ li a:hover {
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        padding: 0px;
+        padding: 50px;
         margin: 0px;
     }
     
@@ -490,6 +529,89 @@ li a:hover {
         padding-right: 80px;
     }
 
+    /*.faq {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .faq-section {
+        background-color: #FA4A0C;
+        border: 1px solid #FA4A0C;
+        border-radius: 20px;
+        padding-bottom: 20px;
+    }
+
+    .faq-txt {
+        text-align: center;
+    }
+      
+    .faq-section details {
+        margin: 30px;
+        margin-bottom: 10px;
+        border: 1px solid #252B42;
+        border-radius: 20px;
+        background-color: white;
+        padding: 10px;
+        min-width: 300px;
+    }
+      
+    .faq-section summary {
+        cursor: pointer;
+        color: #252B42;
+        font-weight: bold;
+        background-color: white;
+    }
+      
+    .faq-section details[open] {
+        background-color: white;
+    }
+      
+    .faq-section p {
+        margin-top: 5px;
+    }*/
+    .faq-txt {
+        display: flex;
+        justify-content: center;
+    }
+
+    .faq {
+        justify-content: center;
+        align-items: center;
+        margin: 100px;
+        background-color: #FA4A0C;
+        border-radius: 20px;
+        padding: 50px;
+    }
+    .faq-section {
+        margin: 20px;
+    }
+      
+    .faq-section details {
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+        background-color: white;
+    }
+      
+    .faq-section summary {
+        cursor: pointer;
+        font-weight: bold;
+    }
+      
+    .faq-section details[open] {
+        background-color: #eee;
+    }
+      
+    .faq-section p {
+        margin-top: 5px;
+    }
+
+    
 }
+
+
 
 
