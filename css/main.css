@@ -1,14 +1,6 @@
 /* Starts CSS stylesheet */
 /* Styling mobile first */
 
-#pop {
-    font-family: 'Poppins', sans-serif;
-}
-
-.pop {
-    color: black;
-}
-
 #txtfood {
     font-weight: 700;
 }
@@ -17,6 +9,12 @@
     font-family: 'Montserrat', sans-serif;
     margin: 0 auto;
 }
+
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+
 
 h4 {
     font-size: 24px;
@@ -36,6 +34,74 @@ h2 {
 h3 {
     font-size: 24px;
     color: #FA4A0C;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav {
+    margin-top: 10px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+  
+.menu-toggle {
+    display: none;
+}
+  
+.hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+    width: 100px;   
+}
+  
+.hamburger::before,
+.hamburger::after {
+    content: "";
+    height: 50px;
+    width: 100%;
+}
+  
+
+  
+.nav-list {
+    display: none;
+    background-color: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.menu-toggle:checked ~ .nav-list {
+    display: block;
+}
+  
+.nav-list li {
+    padding: 10px;
+}
+  
+.nav-list a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+li a:hover {
+    color: #FA4A0C;
+}
+
+.title {
+    color: #252B42;
 }
 
 .text-banner {
@@ -76,107 +142,27 @@ h3 {
     color: #FA4A0C;
 }
 
-/*.header-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-
-.nav-list li {
-    list-style: none;
-
-}
-
-.nav-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: right;
-    margin-right: 50px;
-    margin-top: 40px;
-    align-self: flex-end;
-}
-
-.nav-list li a {
-    text-decoration: none;
-    padding: 40px;
-    padding-right: 30px;
-    color: #252B42;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.logo {
-    margin-left: 50px;
-}
-
-.banner1 {
-    margin: 0;
-    padding: 0;
-    background: url(../img/Rectangle\ 48.png);
-    height: 700px;
-    background-size: cover;
-    background-position: center;
-}
-
-.text-banner {
-    text-align: center;
-    padding-top: 50px;
-    color: white;
-}
-
-.btns {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.playstore {
-    width: 236px;
-    height: 68px;
-    border-radius: 30px;
-    border: none;
-    background-color: #FA4A0C;
-    font-size: 24px;
-    font-weight: 600;
-    color: white;
-}
-
-.appstore {
-    width: 236px;
-    height: 68px;
-    border-radius: 30px;
-    border: solid 1px;
-    border-color: white;
-    background-color: transparent;
-    font-size: 24px;
-    font-weight: 600;
-    color: white;
-}
-
-.btn-play {
-    padding: 20px;
-}
-
-.btn-app {
-    padding: 20px;
-}*/
-
 .mobile {
     display: flex;
     justify-content: center;
 }
 
-.pop {
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#heading-dif {
     border-bottom: 3px solid #E4E4E4;
     padding: 50px;
 }
 
-.pop {
+#heading-dif {
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .cards {
@@ -184,30 +170,28 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 50px;
 }
 
- .txt {
+.txt {
     text-align: center;
     padding-top: 50px;
- }
+}
 
- .cell {
+.cell {
     display: flex;
     justify-content: center;
- }
+}
 
- .foot-banner {
+.foot-banner {
     background-color: #252B42;
     height: 565px;
     display: flex;
     flex-direction: column;
     align-items: center;
- }
+    margin: 0 auto;
+}
 
- #foot-banner {
-    padding-top: 110px;
-    padding: 50px;
- }
 
 .btn-foot {
     display: flex;
@@ -238,12 +222,30 @@ h3 {
     background-color: transparent;
 }
 
- #white {
+#white {
     color: white;
     text-align: center;
- }
+}
 
- @media screen and (min-width: 744px ) {
+.dskt-only {
+    display: none;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.copy {
+    font-size: 12px;
+    font-weight: 600;
+    color: #5C5C5C;
+}
+
+@media screen and (min-width: 744px ) {
     h4 {
         font-size: 24px;
         font-weight: 100;
@@ -263,13 +265,25 @@ h3 {
         font-size: 24px;
         color: #FA4A0C;
     }
-    
+
+    .title {
+        color: white;
+    }
+
+    .hamburger {
+        display: none; /* Hide hamburger menu on desktop */
+    }
+
     .header-container {
+        margin: 0;
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
-        padding: 30px;
-        padding-top: 25px;
-        padding-bottom: 25px;
+        padding-top: 30px;
+    }
+
+    .navbar {
+        display: block;
     }
     
     .nav-list li {
@@ -286,14 +300,25 @@ h3 {
         margin-top: 40px;
         align-self: flex-end;
     }
+
+    .nav-list li {
+        padding: 40px;
+        padding-top: 0;
+    }
     
     .nav-list li a {
         text-decoration: none;
-        padding: 40px;
-        padding-right: 30px;
         color: #252B42;
         font-size: 16px;
         font-weight: 600;
+    }
+
+    li a:hover {
+        color: #FA4A0C;
+    }
+
+    li a:active {
+        color: #FA4A0C;
     }
     
     .logo {
@@ -352,18 +377,119 @@ h3 {
         padding: 20px;
     }
     
-    .mobile {
+    #mobile {
         display: flex;
         justify-content: center;
+        border-bottom: 3px solid #E4E4E4;
+    }
+
+    .poppins {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    #heading-dif {
+        border-bottom: none;
+        text-align: center;
+    }
+
+    .dskt-only {
+        display: block;
+        padding-left: 80px;
     }
 
     .main-content {
         margin-top: 700px;
     }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: "card1 card1"
+        "card2 card2"
+        "card3 card3";
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card1 {
+        grid-area: card1;
+    }
+
+    .card2 {
+        grid-area: card2;
+    }
+
+    .card3 {
+        grid-area: card3;
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        padding-top: 30px;
+    }
+
+    .card1 {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .card2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .card3 {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .txt1, .txt2, .txt3 {
+        padding: 80px;
+        text-align: left;
+    }
+
+    .foot-banner {
+        background-image: url(../img/Rectangle\ 47.png);
+        background-size: cover;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .txt-foot {
+        padding-top: 85px;
+    }
     
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .copy {
+        font-size: 12px;
+        font-weight: 600;
+        color: #5C5C5C;
+        padding-right: 80px;
+    }
 
-
-
- }
+}
 
 
